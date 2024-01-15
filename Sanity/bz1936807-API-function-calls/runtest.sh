@@ -32,7 +32,7 @@ PACKAGE="tests-libfastjson"
 
 rlJournalStart
     rlPhaseStartSetup
-        rlRun "rlImport --all" || rlDie 'cannot continue'
+        rlRun "rlCheckRecommended; rlCheckRequired" || rlDie 'cannot continue'
     rlPhaseEnd
 
     rlPhaseStartTest '' && {
