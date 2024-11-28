@@ -35,7 +35,7 @@ rlJournalStart
         rlRun "rlCheckRecommended; rlCheckRequired" || rlDie 'cannot continue'
     rlPhaseEnd
 
-    rlPhaseStartTest '' && {
+    rlPhaseStartTest && {
         rlRun "make" 0 "Compile source files. If fjson_object_array_del_idx() function is not present, this will fail."
         rlRun "make test" 0 "Execute simple unit test."
     rlPhaseEnd; }
