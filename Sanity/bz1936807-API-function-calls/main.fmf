@@ -11,6 +11,7 @@ tag:
 - CI-Tier-1
 - Tier2
 - rhel-buildroot
+- ImageMode
 tier: 2
 extra-nitrate: TC#0610373
 extra-task: /libfastjson/Sanity/bz1936807-API-function-calls
