@@ -1,4 +1,9 @@
 summary: added new API call fjson_object_array_del_idx()
+description: |
+    Verify that the fjson_object_array_del_idx() API function is present
+    in libfastjson by compiling and running a unit test that creates a JSON
+    array, adds elements, deletes them using the function, and asserts the
+    array is empty.
 contact:
   - Atilla Lakatos <alakatos@redhat.com>
 test: ./runtest.sh
